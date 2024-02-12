@@ -1,0 +1,80 @@
+{
+  ConstraintSets: {
+    start: {
+      location: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top', 144]
+      },
+      tempValue: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['location', 'bottom', 12]
+      },
+      conditionText: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['tempValue', 'bottom', 12]
+      },
+      tempRange: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['conditionText', 'bottom', 12],
+        bottom: ['parent', 'bottom', 104]
+      }
+    },
+    end: {
+      location: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top']
+      },
+      conditionText: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top']
+      },
+      tempValue: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top']
+      },
+      tempRange: {
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top']
+      }
+    }
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end',
+      pathMotionArc: 'startVertically',
+      KeyFrames: {
+        KeyAttributes: [
+          {
+            target: ['location'],
+            frames: [0, 75, 100],
+            alpha: [1, 0, 0]
+          },
+          {
+            target: ['tempValue'],
+            frames: [0, 75, 100],
+            alpha: [1, 0, 0]
+          },
+          {
+            target: ['conditionText'],
+            frames: [0, 75, 100],
+            alpha: [1, 0, 0]
+          },
+          {
+            target: ['tempRange'],
+            frames: [0, 75, 100],
+            alpha: [1, 0, 0],
+          }
+        ]
+      }
+    }
+  }
+}

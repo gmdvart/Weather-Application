@@ -1,0 +1,98 @@
+[versions]
+kotlinxSerializationJson = "1.6.0"
+coreKtx = "1.9.0"
+lifecycle = "2.6.2"
+activityCompose = "1.8.2"
+activityKtx = "1.8.2"
+composeBom = "2023.03.00"
+splashscreen = "1.0.1"
+navigation = "2.7.6"
+location = "21.1.0"
+junit = "4.13.2"
+extJunit = "1.1.5"
+espressoCore = "3.5.1"
+ktor = "2.3.6"
+logbackClassic = "1.4.11"
+coil = "2.5.0"
+daggerHilt = "2.44"
+uiTooling = "1.5.4"
+motionLayout = "1.1.0-alpha13"
+
+[libraries]
+# AndroidX
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
+# Compose
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-ui-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+# Navigation
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+# Location Play Services
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "location" }
+# Ktor
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+ktor-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logbackClassic" }
+# Hilt
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "daggerHilt" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "daggerHilt" }
+# Coil
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+# Test
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+# Android Test
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "extJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+# Debug
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "uiTooling" }
+
+[plugins]
+android-application = { id = "com.android.application", version = "8.2.0" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.8.10" }
+# Hilt
+hilt-android = { id = "com.google.dagger.hilt.android", version = "2.44" }
+
+[bundles]
+androidx = [
+    "core-ktx",
+    "lifecycle-runtime",
+    "activity-ktx",
+    "activity-compose",
+    "viewmodel-compose",
+    "core-splashscreen"
+]
+androidx-compose = [
+    "compose-ui",
+    "compose-ui-graphics",
+    "compose-ui-preview",
+    "compose-material3"
+]
+androidx-test = [
+    "androidx-junit",
+    "androidx-espresso-core"
+]
+androidx-compose-debug = [
+    "compose-ui-tooling",
+    "compose-ui-test-manifest",
+    "androidx-ui-tooling"]
+ktor-client = [
+    "ktor-core",
+    "ktor-android",
+    "ktor-negotiation",
+    "ktor-serialization",
+    "kotlinx-serialization-json"
+]

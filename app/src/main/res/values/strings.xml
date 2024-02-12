@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <string name="wind_speed">Wind speed</string>
+    <string name="wind_speed_value">%1$d kph</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="pressure_value">%1$d mb</string>
+    <string name="pressure_units">mb</string>
+
+    <string name="forecast_overview_title">Forecast on 24 hours</string>
+
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+
+    <string name="real_feel">Real Feel</string>
+    <string name="uv_index">UV Index</string>
+    <string name="chance_of_rain">Chance of Rain</string>
+    <string name="air_quality">Air Quality</string>
+
+    <string name="wind_direction">Wind direction is %1$s</string>
+
+    <string name="navigate_back">Navigate to main screen</string>
+</resources>
